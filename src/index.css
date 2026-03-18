@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@300;400;500&display=swap');
+
+@theme {
+  --color-bg:           #0A1628;
+  --color-bg-card:      #0A1628;
+  --color-bg-sidebar:   #0D1C35;
+  --color-bg-input:     #0F2040;
+
+  --color-accent:       #F97316;
+  --color-accent-hover: #EA6C0A;
+
+  --color-border:       #1A2F50;
+
+  --color-text-primary: #F8FAFC;
+  --color-text-muted:   #7B92B2;
+  --color-text-faint:   #1E3358;
+
+  --font-display: 'Syne', sans-serif;
+  --font-body:    'Inter', sans-serif;
+
+  --sidebar-width: 300px;
+}
+
+body {
+  background-color: var(--color-bg);
+  overflow-x: hidden;
+}
