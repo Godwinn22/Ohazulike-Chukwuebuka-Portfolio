@@ -1,10 +1,11 @@
 import React from "react";
+import Sidebar from "./components/Sidebar";
 
 const App = () => {
     return (
-        <div>
-            <h1 className="text-white text-4xl p-8">Setup complete 🚀</h1>
-        </div>
+        <>
+            <Sidebar />
+		</>
     );
 };
 
