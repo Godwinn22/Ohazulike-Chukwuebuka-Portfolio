@@ -27,7 +27,7 @@ export const recentProjects = [
         id: 2,
         title: "Setime Digital Hub Academy",
         category: "Coding Academy Platform",
-        image: "https://res.cloudinary.com/ddvs8i9lc/image/upload/v1773837457/Setime_Digital_Hub_bq54ln.png",
+        image: "https://res.cloudinary.com/ddvs8i9lc/image/upload/v1774005656/Setime_Digital_Hub_ytrxc6.png",
     },
     {
         id: 3,
