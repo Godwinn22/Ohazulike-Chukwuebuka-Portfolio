@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { statsData, recentProjects } from "../data";
+import ContactForm from "../components/ContactForm";
 import { FiArrowUpRight } from "react-icons/fi"; // Feather Icons
 
 const Home = () => {
@@ -113,6 +114,9 @@ const Home = () => {
                     </Link>
                 </div>
             </section>
+
+            {/* ── Contact Section ── */}
+            <ContactForm />
         </main>
     );
 };
