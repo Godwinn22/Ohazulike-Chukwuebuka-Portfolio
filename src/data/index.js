@@ -1,5 +1,6 @@
 export const myData = {
     name: "Ohazulike Chukwuebuka Godwin",
+	nick_name : "CodePanda",
     tagline:
         "A Software Engineer who builds scalable products and loves to solve problems.",
     photo: "https://res.cloudinary.com/ddvs8i9lc/image/upload/v1773911343/IMG-20230528-WA0041_4_nhhnoz.jpg",
