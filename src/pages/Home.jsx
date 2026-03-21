@@ -97,7 +97,7 @@ const Home = () => {
                                 </div>
                                 {/* Arrow icon */}
                                 <FiArrowUpRight
-                                    className="text-text-primary group-hover:text-accent transition-colors duration-300"
+                                    className="text-text-primary group-hover:text-accent group-hover:translate-x-2 transition-all duration-300"
                                     size={16}
                                 />
                             </div>
