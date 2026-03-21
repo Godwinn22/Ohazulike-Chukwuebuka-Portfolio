@@ -2,10 +2,11 @@ import { Link } from "react-router-dom";
 import { statsData, recentProjects } from "../data";
 import ContactForm from "../components/ContactForm";
 import { FiArrowUpRight } from "react-icons/fi"; // Feather Icons
+import Footer from "../components/Footer";
 
 const Home = () => {
     return (
-        <main className="ml-0 md:ml-78 mt-2 md:mt-8 min-h-screen px-8 md:px-16 py-24">
+        <main className="ml-0 md:ml-97 mt-2 md:mt-8 min-h-screen px-8 md:px-16 py-24">
             {/* ── Hero Section ── */}
             <section className="mb-15">
                 {/* The big stacked word. */}
@@ -114,9 +115,6 @@ const Home = () => {
                     </Link>
                 </div>
             </section>
-
-            {/* ── Contact Section ── */}
-            <ContactForm />
         </main>
     );
 };
