@@ -33,7 +33,7 @@ const Home = () => {
             </section>
 
             {/* ── Stats Section ── */}
-            <section className="mb-15">
+            <section className="mb-25">
                 <div className="flex flex-wrap gap-12">
                     {statsData.map((stat) => {
                         return (
@@ -52,7 +52,7 @@ const Home = () => {
             </section>
 
             {/* ── Recent Projects Section ── */}
-            <section className="mb-15">
+            <section className="mb-25">
                 {/* Section heading — same stacked style */}
                 <h1
                     className="font-display text-[60px] md:text-[80px] font-black leading-none uppercase mb-8"

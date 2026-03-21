@@ -18,7 +18,7 @@ const ContactForm = () => {
     const [isError, setIsError] = useState(false);
 
     function handleChange(e) {
-        setFormData({...formData,  [e.target.name]: e.target.value });
+        setFormData({ ...formData, [e.target.name]: e.target.value });
     }
 
     const handleSubmit = async (e) => {
@@ -57,10 +57,7 @@ const ContactForm = () => {
         }
     };
     return (
-        <section
-            id="contact"
-            className="mb-24 border-t border-border"
-        >
+        <section id="contact" className="mb-25 border-border">
             {/* ── Section Heading ── */}
             <h2
                 className="text-[60px] md:text-[80px] font-black leading-none uppercase mb-12"
@@ -198,7 +195,7 @@ const ContactForm = () => {
                 <button
                     type="submit"
                     disabled={isLoading}
-                    className="bg-accent hover:bg-accent-hover text-white font-bold py-4 px-8 rounded-xl transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed self-start"
+                    className="bg-accent hover:bg-accent-hover text-white font-bold py-4 px-8 rounded-xl transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed self-start cursor-pointer"
                 >
                     {/* 
             We show different text based on the loading state.
