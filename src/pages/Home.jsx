@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import { statsData, recentProjects } from "../data";
+import { statsData, projectsData } from "../data";
 import { FiArrowUpRight } from "react-icons/fi"; // Feather Icons
 
 const Home = () => {
     return (
-        <main className="ml-0 md:ml-97 mt-2 md:mt-8 min-h-screen px-8 md:px-16 py-24">
+        <main className="ml-0 md:ml-97 mt-2 md:mt-8 min-h-screen px-8 md:px-16 pt-31 pb-24">
             {/* ── Hero Section ── */}
             <section className="mb-15">
                 {/* The big stacked word. */}
@@ -51,7 +51,7 @@ const Home = () => {
             </section>
 
             {/* ── Recent Projects Section ── */}
-            <section className="mb-25">
+            <section>
                 {/* Section heading — same stacked style */}
                 <h1
                     className="font-display text-[60px] md:text-[80px] font-black leading-none uppercase mb-8"
@@ -70,9 +70,9 @@ const Home = () => {
                 </h1>
                 {/* Project list */}
                 <div className="flex flex-col">
-                    {recentProjects.map((project) => {
+                    {projectsData.slice(0, 3).map((project) => {
                         return (
-                            <div
+                            <Link to={`/projects/${project.slug}`}
                                 key={project.id}
                                 className="flex items-center gap-6 py-6 border-b border-border group cursor-pointer"
                             >
@@ -98,7 +98,7 @@ const Home = () => {
                                     className="text-text-primary group-hover:text-accent group-hover:translate-x-2 transition-all duration-300"
                                     size={16}
                                 />
-                            </div>
+                            </Link>
                         );
                     })}
                 </div>
