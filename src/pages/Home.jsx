@@ -79,7 +79,7 @@ const Home = () => {
                                 {/* Project thumbnail */}
                                 <div className="w-35 md:w-50 h-17 md:h-30 rounded-lg overflow-hidden shrink-0">
                                     <img
-                                        src={project.image}
+                                        src={project.images[0]} // Show the first image as thumbnail
                                         alt={project.title}
                                         className="w-full h-full object-cover"
 										loading="lazy"
