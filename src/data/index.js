@@ -59,7 +59,6 @@ export const projectsData = [
             "A website for a non-profit organization focused on educational, community empowerment etc. Features include Volunteers page, gallery, donation integration.",
         images: [
             "https://res.cloudinary.com/ddvs8i9lc/image/upload/v1774199648/Macbook-Air-jovitachifoundations_home_c9grdn.png",
-			"https://res.cloudinary.com/ddvs8i9lc/image/upload/v1774199647/iPhone-12-PRO-jovitachifoundations_home_lpfhg9.png",
 			"https://res.cloudinary.com/ddvs8i9lc/image/upload/v1774199674/Macbook-Air-jovitachifoundations_about_ggeion.png",
 			"https://res.cloudinary.com/ddvs8i9lc/image/upload/v1774199624/Macbook-Air-jovitachifoundations_contact_yufikc.png"
         ],
@@ -76,7 +75,6 @@ export const projectsData = [
             "Supreme Package Machinery Ventures is a leading provider of packaging machinery solutions. The website features a product catalog, service offerings, and contact information to connect with potential clients in the industrial sector.",
         images: [
             "https://res.cloudinary.com/ddvs8i9lc/image/upload/v1774199629/Macbook-Air-supremepackagemachinery_home_oekhbi.png",
-			"https://res.cloudinary.com/ddvs8i9lc/image/upload/v1774199651/iPhone-12-PRO-supremepackagemachinery_home_sgggcu.png",
 			"https://res.cloudinary.com/ddvs8i9lc/image/upload/v1774199676/Macbook-Air-supremepackagemachinery_about_yr6krq.png",
 			"https://res.cloudinary.com/ddvs8i9lc/image/upload/v1774199665/Macbook-Air-supremepackagemachinery_services_dpn0fs.png",
         ],
