@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
-import { Contact } from "lucide-react";
+import Projects from "./pages/Projects";
 
 const App = () => {
     return (
@@ -13,6 +13,7 @@ const App = () => {
             <Navbar />
 			<Routes>
 				<Route path="/" element={<Home />} />
+				<Route path="/projects" element={<Projects />} />
 			</Routes>
 			<ContactForm />
             <Footer />
