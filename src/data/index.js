@@ -26,8 +26,8 @@ export const projectsData = [
         description:
             "A comprehensive asset management dashboard built for businesses to track, manage and monitor their assets in real time. Features include asset categorization, depreciation tracking, and detailed reporting.",
         images: [
-            "https://res.cloudinary.com/ddvs8i9lc/image/upload/v1773918152/Macbook-Air-assetpulsehq-dashboard_zpreik.png",
             "https://res.cloudinary.com/ddvs8i9lc/image/upload/v1773918156/Macbook-Air-assetpulsehq-login_f7ju81.png",
+            "https://res.cloudinary.com/ddvs8i9lc/image/upload/v1773918152/Macbook-Air-assetpulsehq-dashboard_zpreik.png",
         ],
         tags: ["React", "Vite", "Supabase", "Tailwind"],
         liveUrl: "https://assetpulsehq.netlify.app",
