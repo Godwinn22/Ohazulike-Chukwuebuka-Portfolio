@@ -51,14 +51,14 @@ const ProjectDetails = () => {
         >
             {/* ── Project Title ── */}
             <h1
-                className="font-black leading-none uppercase mb-10"
+                className="font-black leading-none uppercase mb-10 font-display text-[25px] md:text-[50px]"
                 style={{ fontFamily: "var(--font-display)" }}
             >
-                <span className="text-text-primary block text-[25px] md:text-[50px]">
+                <span className="text-text-primary block mb-2">
                     {project.title}
                 </span>
                 <span
-                    className="block text-[25px] md:text-[50px]"
+                    className="block"
                     style={{
                         WebkitTextStroke: "3px #1E3358",
                         color: "transparent",
@@ -137,7 +137,7 @@ const ProjectDetails = () => {
                             {project.tags.map((tag) => (
                                 <span
                                     key={tag}
-                                    className="px-3 py-1 bg-bg-card border border-border rounded-full text-text-muted text-sm"
+                                    className="px-3 py-1 bg-bg-card border border-border rounded-full text-text-muted text-sm hover:bg-border transition-colors duration-300"
                                 >
                                     {tag}
                                 </span>
