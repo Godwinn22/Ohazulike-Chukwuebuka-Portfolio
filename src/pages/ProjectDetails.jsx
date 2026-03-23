@@ -1,4 +1,7 @@
 import { useState, useEffect } from "react";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion";
+import { fadeUp } from "../utils/animations";
 import { useParams } from "react-router-dom";
 import { projectsData } from "../data";
 
@@ -39,7 +42,13 @@ const ProjectDetails = () => {
     }
 
     return (
-        <main className="ml-0 md:ml-97 px-8 md:px-16 mt-2 md:mt-8 min-h-screen pt-31 pb-24">
+        <motion.main
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="ml-0 md:ml-97 px-8 md:px-16 mt-2 md:mt-8 min-h-screen pt-31 pb-24"
+        >
             {/* ── Project Title ── */}
             <h1
                 className="font-black leading-none uppercase mb-10"
@@ -173,7 +182,7 @@ const ProjectDetails = () => {
                     </div>
                 </div>
             </div>
-        </main>
+        </motion.main>
     );
 };
 
