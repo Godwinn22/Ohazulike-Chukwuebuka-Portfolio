@@ -1,11 +1,18 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { myData } from "../data";
+import { slideInLeft } from "../utils/animations";
 import { FaGithub, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 
 const Sidebar = () => {
     const devData = myData;
     return (
-        <aside className="fixed top-23 left-18 h-[calc(100vh-200px)] w-70 bg-bg-sidebar border-2 border-border rounded-2xl flex flex-col items-center justify-between py-10 px-6 z-50">
+        <motion.aside
+            variants={slideInLeft}
+            initial="hidden"
+            animate="visible"
+            className="fixed top-23 left-18 h-[calc(100vh-200px)] w-70 bg-bg-sidebar border-2 border-border rounded-2xl flex flex-col items-center justify-between py-10 px-6 z-50"
+        >
             {/* ── Top Section: Photo + Name + Tagline ── */}
             <div className="flex flex-col items-center text-center gap-4">
                 {/* Profile Photo */}
@@ -73,7 +80,7 @@ const Sidebar = () => {
                     <FaLinkedinIn size={20} />
                 </a>
             </div>
-        </aside>
+        </motion.aside>
     );
 };
 
