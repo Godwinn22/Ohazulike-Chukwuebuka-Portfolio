@@ -1,8 +1,17 @@
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion";
+import { fadeUp } from "../utils/animations";
 import ExperienceList from "../components/ExperienceList";
 
 const Experience = () => {
     return (
-        <main className="ml-0 md:ml-90 mt-2 md:mt-8 min-h-screen px-8 md:px-16 pt-31 pb-24">
+        <motion.main
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="ml-0 md:ml-90 mt-2 md:mt-8 min-h-screen px-8 md:px-16 pt-31 pb-24"
+        >
             <h1 className="font-display text-[50px] md:text-[80px] font-black leading-none uppercase mb-8">
                 <span className="text-text-primary block">3 Years of</span>
                 <span
@@ -18,7 +27,7 @@ const Experience = () => {
 
             {/* No limit passed — shows all experience */}
             <ExperienceList />
-        </main>
+        </motion.main>
     );
 };
 
