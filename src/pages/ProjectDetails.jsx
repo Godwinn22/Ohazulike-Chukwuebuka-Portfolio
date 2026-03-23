@@ -36,9 +36,11 @@ const ProjectDetails = () => {
     }, [project.images.length]); // Rerun this effect if the number of images changes
 
     if (!project) {
-        <div className="ml-0 md:ml-90 px-8 md:px-16 mt-2 md:mt-8 min-h-screen pt-31 pb-24 flex items-center justify-center">
-            <h2 className="text-text-muted">Project Not Found.</h2>
-        </div>;
+        return (
+            <div className="ml-0 lg:ml-90 px-8 md:px-16 mt-2 md:mt-8 min-h-screen pt-31 pb-24 flex items-center justify-center">
+                <h2 className="text-text-primary">Project Not Found.</h2>
+            </div>
+        );
     }
 
     return (

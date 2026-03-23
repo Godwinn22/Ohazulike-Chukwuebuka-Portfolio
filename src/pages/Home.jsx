@@ -10,11 +10,11 @@ import { myData } from "../data";
 
 const Home = () => {
     return (
-        <motion.main className="ml-0 md:ml-90 mt-2 md:mt-8 min-h-screen px-8 md:px-16 pt-31 pb-24">
+        <motion.main className="ml-0 lg:ml-90 mt-2 md:mt-8 min-h-screen px-8 md:px-16 pt-31 pb-24">
 
             {/* Mobile only profile card */}
-            <div className="flex md:hidden flex-col items-center text-center gap-3 mb-12 p-6 bg-bg-sidebar border border-border rounded-3xl">
-                <div className="w-24 h-24 rounded-2xl overflow-hidden border-2 border-accent">
+            <div className="flex lg:hidden flex-col items-center text-center gap-3 mb-12 p-6 bg-bg-sidebar border border-border rounded-3xl">
+                <div className="w-40 h-40 rounded-2xl overflow-hidden border-2 border-accent">
                     <img
                         src={myData.photo}
                         alt={"Photo of " + myData.name}

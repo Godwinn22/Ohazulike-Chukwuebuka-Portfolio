@@ -12,7 +12,7 @@ const Projects = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="ml-0 md:ml-90 px-8 md:px-16 mt-2 md:mt-8 min-h-screen pt-31 pb-24"
+            className="ml-0 lg:ml-90 px-8 md:px-16 mt-2 md:mt-8 min-h-screen pt-31 pb-24"
         >
             <h1 className="font-display text-[35px] md:text-[70px] font-black leading-none uppercase mb-8">
                 <span className="text-text-primary block">Recent</span>

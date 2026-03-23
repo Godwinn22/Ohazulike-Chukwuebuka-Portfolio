@@ -66,7 +66,7 @@ const ContactForm = () => {
             whileInView="visible"
             viewport={{ once: true }}
             id="contact"
-            className="ml-0 md:ml-90 mb-18 md:mb-25 px-8 md:px-16"
+            className="ml-0 lg:ml-90 mb-18 md:mb-25 px-8 md:px-16"
         >
             {/* ── Section Heading ── */}
             <h2
