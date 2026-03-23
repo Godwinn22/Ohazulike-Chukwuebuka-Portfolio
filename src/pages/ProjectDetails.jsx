@@ -33,7 +33,7 @@ const ProjectDetails = () => {
     }, [project.images.length]); // Rerun this effect if the number of images changes
 
     if (!project) {
-        <div className="ml-0 md:ml-97 px-8 md:px-16 mt-2 md:mt-8 min-h-screen pt-31 pb-24 flex items-center justify-center">
+        <div className="ml-0 md:ml-90 px-8 md:px-16 mt-2 md:mt-8 min-h-screen pt-31 pb-24 flex items-center justify-center">
             <h2 className="text-text-muted">Project Not Found.</h2>
         </div>;
     }
@@ -45,13 +45,13 @@ const ProjectDetails = () => {
                 className="font-black leading-none uppercase mb-10"
                 style={{ fontFamily: "var(--font-display)" }}
             >
-                <span className="text-text-primary block text-[50px] md:text-[80px]">
+                <span className="text-text-primary block text-[25px] md:text-[50px]">
                     {project.title}
                 </span>
                 <span
-                    className="block text-[20px] md:text-[50px]"
+                    className="block text-[25px] md:text-[50px]"
                     style={{
-                        WebkitTextStroke: "2px #1E3358",
+                        WebkitTextStroke: "3px #1E3358",
                         color: "transparent",
                     }}
                 >

@@ -57,7 +57,7 @@ const ContactForm = () => {
         }
     };
     return (
-        <section id="contact" className="ml-0 md:ml-97 mb-18 md:mb-25 px-8 md:px-16">
+        <section id="contact" className="ml-0 md:ml-90 mb-18 md:mb-25 px-8 md:px-16">
             {/* ── Section Heading ── */}
             <h2
                 className="text-[60px] md:text-[80px] font-black leading-none uppercase mb-12"

@@ -4,7 +4,7 @@ import { FiArrowUpRight } from "react-icons/fi"; // Feather Icons
 
 const Home = () => {
     return (
-        <main className="ml-0 md:ml-97 mt-2 md:mt-8 min-h-screen px-8 md:px-16 pt-31 pb-24">
+        <main className="ml-0 md:ml-90 mt-2 md:mt-8 min-h-screen px-8 md:px-16 pt-31 pb-24">
             {/* ── Hero Section ── */}
             <section className="mb-15">
                 {/* The big stacked word. */}
