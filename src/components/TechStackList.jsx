@@ -1,11 +1,11 @@
-import { toolsData } from "../data";
+import { stackData } from "../data";
 import * as SiIcons from "react-icons/si"; // Import all icons from react-icons/si
 
-const ToolsList = ({ limit }) => {
-    const displayedTools = limit ? toolsData.slice(0, limit) : toolsData;
+const TechStackList = ({ limit }) => {
+    const displayedStack = limit ? stackData.slice(0, limit) : stackData;
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {displayedTools.map((tool) => {
+            {displayedStack.map((tool) => {
                 const Icon = SiIcons[tool.icon];
 
                 return (
@@ -41,4 +41,4 @@ const ToolsList = ({ limit }) => {
     );
 };
 
-export default ToolsList;
+export default TechStackList;

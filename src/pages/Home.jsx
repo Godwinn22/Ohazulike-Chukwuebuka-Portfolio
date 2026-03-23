@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import ExperienceList from "../components/ExperienceList";
 import { statsData, projectsData } from "../data";
 import { FiArrowUpRight } from "react-icons/fi"; // Feather Icons
-import ToolsList from "../components/ToolsList";
+import TechStackList from "../components/TechStackList";
 
 const Home = () => {
     return (
@@ -163,7 +163,7 @@ const Home = () => {
                         Stack
                     </span>
                 </h2>
-                <ToolsList limit={6} />
+                <TechStackList limit={6} />
                 <div className="mt-10">
                     <Link
                         to="/experience"

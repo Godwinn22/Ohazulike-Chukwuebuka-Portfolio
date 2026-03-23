@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 import Projects from "./pages/Projects";
 import ProjectDetails from "./pages/projectDetails";
 import Experience from "./pages/Experience";
-import Tools from "./pages/Tools";
+import TechStack from "./pages/TechStack";
 
 const App = () => {
     return (
@@ -19,7 +19,7 @@ const App = () => {
 				<Route path="/projects" element={<Projects />} />
 				<Route path="/projects/:slug" element={<ProjectDetails />} />
 				<Route path="/experience" element={<Experience />} />
-				<Route path="/techstack" element={<Tools />} />
+				<Route path="/techstack" element={<TechStack />} />
 			</Routes>
 			<ContactForm />
             <Footer />

@@ -131,7 +131,7 @@ export const experienceData = [
     },
 ];
 
-export const toolsData = [
+export const stackData = [
     {
         id: 1,
         name: "React",
