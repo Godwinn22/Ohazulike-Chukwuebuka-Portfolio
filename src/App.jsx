@@ -9,6 +9,7 @@ import Projects from "./pages/Projects";
 import ProjectDetails from "./pages/projectDetails";
 import Experience from "./pages/Experience";
 import TechStack from "./pages/TechStack";
+import NotFound from "./pages/NotFound";
 
 const AppContent = ({ isDark, toggleTheme }) => {
   const location = useLocation()
@@ -23,6 +24,7 @@ const AppContent = ({ isDark, toggleTheme }) => {
         <Route path="/projects/:slug" element={<ProjectDetails />} />
         <Route path="/experience" element={<Experience />} />
         <Route path="/techstack" element={<TechStack />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       {/* 
         key={location.pathname} forces ContactForm and Footer
