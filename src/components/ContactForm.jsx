@@ -1,5 +1,8 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion";
+import { fadeUp } from "../utils/animations";
 
 const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
 const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
@@ -57,7 +60,14 @@ const ContactForm = () => {
         }
     };
     return (
-        <section id="contact" className="ml-0 md:ml-90 mb-18 md:mb-25 px-8 md:px-16">
+        <motion.section
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            id="contact"
+            className="ml-0 md:ml-90 mb-18 md:mb-25 px-8 md:px-16"
+        >
             {/* ── Section Heading ── */}
             <h2
                 className="text-[60px] md:text-[80px] font-black leading-none uppercase mb-12"
@@ -205,7 +215,7 @@ const ContactForm = () => {
                     {isLoading ? "Sending..." : "Send Message"}
                 </button>
             </form>
-        </section>
+        </motion.section>
     );
 };
 
