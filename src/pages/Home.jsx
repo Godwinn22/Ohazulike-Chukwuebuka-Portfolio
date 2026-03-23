@@ -6,10 +6,36 @@ import ExperienceList from "../components/ExperienceList";
 import { statsData, projectsData } from "../data";
 import { FiArrowUpRight } from "react-icons/fi"; // Feather Icons
 import TechStackList from "../components/TechStackList";
+import { myData } from "../data";
 
 const Home = () => {
     return (
         <motion.main className="ml-0 md:ml-90 mt-2 md:mt-8 min-h-screen px-8 md:px-16 pt-31 pb-24">
+
+            {/* Mobile only profile card */}
+            <div className="flex md:hidden flex-col items-center text-center gap-3 mb-12 p-6 bg-bg-sidebar border border-border rounded-3xl">
+                <div className="w-24 h-24 rounded-2xl overflow-hidden border-2 border-accent">
+                    <img
+                        src={myData.photo}
+                        alt={"Photo of " + myData.name}
+                        className="w-full h-full object-cover"
+                    />
+                </div>
+
+                <h2
+                    className="text-text-primary text-lg font-bold"
+                    style={{ fontFamily: "var(--font-display)" }}
+                >
+                    {myData.name}
+                </h2>
+
+                <div className="w-8 h-0.5 bg-accent rounded-full"></div>
+
+                {/* <p className="text-text-muted text-sm leading-relaxed">
+                    {myData.tagline}
+                </p> */}
+            </div>
+
             {/* ── Hero Section ── */}
             <motion.section
                 variants={fadeUp}
@@ -20,7 +46,7 @@ const Home = () => {
             >
                 {/* The big stacked word. */}
                 <h1
-                    className="font-display text-[50px] md:text-[80px] font-black leading-none uppercase mb-8"
+                    className="font-display text-[35px] md:text-[70px] font-black leading-none uppercase mb-8"
                     style={{ fontFamily: "var(--font-display)" }}
                 >
                     <span className="text-text-primary block">Software</span>
@@ -68,7 +94,7 @@ const Home = () => {
             >
                 {/* Section heading — same stacked style */}
                 <h1
-                    className="font-display text-[60px] md:text-[80px] font-black leading-none uppercase mb-8"
+                    className="font-display text-[35px] md:text-[70px] font-black leading-none uppercase mb-8"
                     style={{ fontFamily: "var(--font-display)" }}
                 >
                     <span className="text-text-primary block">Recent</span>
@@ -140,7 +166,7 @@ const Home = () => {
                 className="mb-25"
             >
                 <h2
-                    className="text-[60px] md:text-[80px] font-black leading-none uppercase mb-12"
+                    className="text-[35px] md:text-[70px] font-black leading-none uppercase mb-12"
                     style={{ fontFamily: "var(--font-display)" }}
                 >
                     <span className="text-text-primary block">3+ Years of</span>
@@ -174,7 +200,7 @@ const Home = () => {
                 viewport={{ once: true }}
             >
                 <h2
-                    className="text-[60px] md:text-[80px] font-black leading-none uppercase mb-12"
+                    className="text-[35px] md:text-[70px] font-black leading-none uppercase mb-12"
                     style={{ fontFamily: "var(--font-display)" }}
                 >
                     <span className="text-text-primary block">Tech</span>
