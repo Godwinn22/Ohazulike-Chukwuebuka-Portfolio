@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import ExperienceList from "../components/ExperienceList";
 import { statsData, projectsData } from "../data";
 import { FiArrowUpRight } from "react-icons/fi"; // Feather Icons
 
@@ -51,7 +52,7 @@ const Home = () => {
             </section>
 
             {/* ── Recent Projects Section ── */}
-            <section>
+            <section className="mb-25">
                 {/* Section heading — same stacked style */}
                 <h1
                     className="font-display text-[60px] md:text-[80px] font-black leading-none uppercase mb-8"
@@ -72,7 +73,8 @@ const Home = () => {
                 <div className="flex flex-col">
                     {projectsData.slice(0, 3).map((project) => {
                         return (
-                            <Link to={`/projects/${project.slug}`}
+                            <Link
+                                to={`/projects/${project.slug}`}
                                 key={project.id}
                                 className="flex items-center gap-6 py-6 border-b border-border group cursor-pointer"
                             >
@@ -82,7 +84,7 @@ const Home = () => {
                                         src={project.images[0]} // Show the first image as thumbnail
                                         alt={project.title}
                                         className="w-full h-full object-cover"
-										loading="lazy"
+                                        loading="lazy"
                                     />
                                 </div>
                                 {/* Project info */}
@@ -110,6 +112,35 @@ const Home = () => {
                         className="inline-flex items-center gap-4 text-accent font-medium hover:gap-5 transition-all duration-300"
                     >
                         View all projects
+                        <FiArrowUpRight size={14} />
+                    </Link>
+                </div>
+            </section>
+
+            {/* ── Experience Section ── */}
+            <section>
+                <h2
+                    className="text-[60px] md:text-[80px] font-black leading-none uppercase mb-12"
+                    style={{ fontFamily: "var(--font-display)" }}
+                >
+                    <span className="text-text-primary block">3+ Years of</span>
+                    <span
+                        className="block"
+                        style={{
+                            WebkitTextStroke: "3px #1E3358",
+                            color: "transparent",
+                        }}
+                    >
+                        Experience
+                    </span>
+                </h2>
+                <ExperienceList limit={3} />
+                <div className="mt-10">
+                    <Link
+                        to="/experience"
+                        className="inline-flex items-center gap-3 text-accent font-medium hover:gap-5 transition-all duration-300"
+                    >
+                        View full experience
                         <FiArrowUpRight size={14} />
                     </Link>
                 </div>
