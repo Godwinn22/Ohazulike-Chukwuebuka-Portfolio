@@ -13,7 +13,7 @@ const ProjectDetails = () => {
     const project = projectsData.find((proj) => proj.slug === slug);
 
     useEffect(() => {
-        if (project.images.length <= 1) return;
+        if (!project || project.images.length <= 1) return;
 
         const interval = setInterval(() => {
             // First fade out
@@ -33,12 +33,12 @@ const ProjectDetails = () => {
         }, 3000);
 
         return () => clearInterval(interval);
-    }, [project.images.length]); // Rerun this effect if the number of images changes
+    }, [project]); // Rerun this effect if the number of images changes
 
     if (!project) {
         return (
             <div className="ml-0 lg:ml-90 px-8 md:px-16 mt-2 md:mt-8 min-h-screen pt-31 pb-24 flex items-center justify-center">
-                <h2 className="text-text-primary">Project Not Found.</h2>
+                <h2 className="text-text-primary text-4xl">Project Not Found.</h2>
             </div>
         );
     }
