@@ -5,12 +5,14 @@ import {
     FaBriefcase,
     FaWrench,
     FaEnvelope,
+    FaSun,
+    FaMoon,
 } from "react-icons/fa";
 
-const Navbar = () => {
+const Navbar = ({ isDark, toggleTheme }) => {
     const location = useLocation();
 
-	const currentPath = location.pathname;
+    const currentPath = location.pathname;
 
     const navItems = [
         {
@@ -97,6 +99,14 @@ const Navbar = () => {
                         </div>
                     );
                 })}
+                {/* Theme Toggle */}
+                <button
+                    onClick={toggleTheme}
+                    aria-label="Toggle theme"
+                    className="w-10 h-10 flex items-center justify-center rounded-full text-text-muted hover:text-accent transition-colors duration-300"
+                >
+                    {isDark ? <FaSun size={16} /> : <FaMoon size={16} />}
+                </button>
             </div>
         </nav>
     );
