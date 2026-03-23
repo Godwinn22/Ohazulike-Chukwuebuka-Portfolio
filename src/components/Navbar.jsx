@@ -3,11 +3,11 @@ import {
     FaHome,
     FaFolder,
     FaBriefcase,
-    FaWrench,
     FaEnvelope,
-    FaSun,
     FaMoon,
+	FaCode
 } from "react-icons/fa";
+import { FiSun } from "react-icons/fi";
 
 const Navbar = ({ isDark, toggleTheme }) => {
     const location = useLocation();
@@ -32,7 +32,7 @@ const Navbar = ({ isDark, toggleTheme }) => {
         },
         {
             path: "/techstack",
-            icon: FaWrench,
+            icon: FaCode,
             label: "TechStack",
         },
         {
@@ -61,7 +61,7 @@ const Navbar = ({ isDark, toggleTheme }) => {
                     const Icon = item.icon;
 
                     return (
-                        <div key={item.path}>
+                        <div key={item.path} className="relative group/tooltip">
                             {/* If this is the contact item we render a button that scrolls
         					to the contact section. For all other items we render a Link
       						that navigates to a new page.
@@ -78,7 +78,7 @@ const Navbar = ({ isDark, toggleTheme }) => {
                                             });
                                         }
                                     }}
-                                    className="w-10 h-10 flex items-center justify-center rounded-full transition-colors duration-300 text-text-muted hover:text-accent"
+                                    className="w-10 h-10 flex items-center justify-center rounded-full transition-colors duration-300 text-text-muted hover:text-accent cursor-pointer"
                                 >
                                     <FaEnvelope size={20} />
                                 </button>
@@ -96,17 +96,27 @@ const Navbar = ({ isDark, toggleTheme }) => {
                                     <Icon size={20} />
                                 </Link>
                             )}
+                            {/* Tooltip — shows on hover */}
+                            <span className="absolute top-12 left-1/2 -translate-x-1/2 bg-bg-sidebar border border-border text-text-primary text-xs px-2 py-1 rounded-lg whitespace-nowrap opacity-0 group-hover/tooltip:opacity-100 transition-opacity duration-200 pointer-events-none">
+                                {item.label}
+                            </span>
                         </div>
                     );
                 })}
                 {/* Theme Toggle */}
-                <button
-                    onClick={toggleTheme}
-                    aria-label="Toggle theme"
-                    className="w-10 h-10 flex items-center justify-center rounded-full text-text-muted hover:text-accent transition-colors duration-300"
-                >
-                    {isDark ? <FaSun size={16} /> : <FaMoon size={16} />}
-                </button>
+                <div className="relative group/tooltip">
+                    <button
+                        onClick={toggleTheme}
+                        aria-label="Toggle theme"
+                        className="w-10 h-10 flex items-center justify-center rounded-full text-text-muted hover:text-accent transition-colors duration-300 cursor-pointer"
+                    >
+                        {isDark ? <FiSun size={16} /> : <FaMoon size={16} />}
+                    </button>
+                    {/* Tooltip — shows on hover */}
+                    <span className="absolute top-12 left-1/2 -translate-x-1/2 bg-bg-sidebar border border-border text-text-primary text-xs px-2 py-1 rounded-lg whitespace-nowrap opacity-0 group-hover/tooltip:opacity-100 transition-opacity duration-200 pointer-events-none">
+                        {isDark ? "Light Mode" : "Dark Mode"}
+                    </span>
+                </div>
             </div>
         </nav>
     );
