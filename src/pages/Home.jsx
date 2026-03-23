@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import ExperienceList from "../components/ExperienceList";
 import { statsData, projectsData } from "../data";
 import { FiArrowUpRight } from "react-icons/fi"; // Feather Icons
+import ToolsList from "../components/ToolsList";
 
 const Home = () => {
     return (
@@ -111,14 +112,14 @@ const Home = () => {
                         to="/projects"
                         className="inline-flex items-center gap-4 text-accent font-medium hover:gap-5 transition-all duration-300"
                     >
-                        View all projects
+                        View All Projects
                         <FiArrowUpRight size={14} />
                     </Link>
                 </div>
             </section>
 
             {/* ── Experience Section ── */}
-            <section>
+            <section className="mb-25">
                 <h2
                     className="text-[60px] md:text-[80px] font-black leading-none uppercase mb-12"
                     style={{ fontFamily: "var(--font-display)" }}
@@ -140,7 +141,35 @@ const Home = () => {
                         to="/experience"
                         className="inline-flex items-center gap-3 text-accent font-medium hover:gap-5 transition-all duration-300"
                     >
-                        View full experience
+                        View Full experience
+                        <FiArrowUpRight size={14} />
+                    </Link>
+                </div>
+            </section>
+            {/* ── TechStack Section ── */}
+            <section>
+                <h2
+                    className="text-[60px] md:text-[80px] font-black leading-none uppercase mb-12"
+                    style={{ fontFamily: "var(--font-display)" }}
+                >
+                    <span className="text-text-primary block">Tech</span>
+                    <span
+                        className="block"
+                        style={{
+                            WebkitTextStroke: "3px #1E3358",
+                            color: "transparent",
+                        }}
+                    >
+                        Stack
+                    </span>
+                </h2>
+                <ToolsList limit={6} />
+                <div className="mt-10">
+                    <Link
+                        to="/experience"
+                        className="inline-flex items-center gap-3 text-accent font-medium hover:gap-5 transition-all duration-300"
+                    >
+                        View Full Tech Stack
                         <FiArrowUpRight size={14} />
                     </Link>
                 </div>
