@@ -43,8 +43,8 @@ export const projectsData = [
             "An e-learning platform for a coding academy offering web development courses. Features include course management, student progress tracking, and an interactive coding environment.",
         images: [
             "https://res.cloudinary.com/ddvs8i9lc/image/upload/v1774204407/Setime_Digital_Hub_1_qmfga6.png",
-			"https://res.cloudinary.com/ddvs8i9lc/image/upload/v1774204387/Setime_Digital_Hub_About_1_nmgiuw.png",
-			"https://res.cloudinary.com/ddvs8i9lc/image/upload/v1774204403/Setime_Digital_Hub_Courses_1_p78cn8.png"
+            "https://res.cloudinary.com/ddvs8i9lc/image/upload/v1774204387/Setime_Digital_Hub_About_1_nmgiuw.png",
+            "https://res.cloudinary.com/ddvs8i9lc/image/upload/v1774204403/Setime_Digital_Hub_Courses_1_p78cn8.png",
         ],
         tags: ["Wordpress", "Elementor", "MySQL"],
         liveUrl: "https://setimetechnologies.com",
@@ -59,8 +59,8 @@ export const projectsData = [
             "A website for a non-profit organization focused on educational, community empowerment etc. Features include Volunteers page, gallery, donation integration.",
         images: [
             "https://res.cloudinary.com/ddvs8i9lc/image/upload/v1774203688/Macbook-Air-jovitachifoundations_home_yy8fd4.png",
-			"https://res.cloudinary.com/ddvs8i9lc/image/upload/v1774203628/Macbook-Air-jovitachifoundations_about_uc108g.png",
-			"https://res.cloudinary.com/ddvs8i9lc/image/upload/v1774203597/Macbook-Air-jovitachifoundations_contact_jpthbl.png"
+            "https://res.cloudinary.com/ddvs8i9lc/image/upload/v1774203628/Macbook-Air-jovitachifoundations_about_uc108g.png",
+            "https://res.cloudinary.com/ddvs8i9lc/image/upload/v1774203597/Macbook-Air-jovitachifoundations_contact_jpthbl.png",
         ],
         tags: ["Wordpress", "Elementor", "MySQL"],
         liveUrl: "https://jovitachifoundations.com",
@@ -75,12 +75,12 @@ export const projectsData = [
             "Supreme Package Machinery Ventures is a leading provider of packaging machinery solutions. The website features a product catalog, service offerings, and contact information to connect with potential clients in the industrial sector.",
         images: [
             "https://res.cloudinary.com/ddvs8i9lc/image/upload/v1774203603/Macbook-Air-supremepackagemachinery_home_vsq0yg.png",
-			"https://res.cloudinary.com/ddvs8i9lc/image/upload/v1774203622/Macbook-Air-supremepackagemachinery_about_ycgvti.png",
-			"https://res.cloudinary.com/ddvs8i9lc/image/upload/v1774203627/Macbook-Air-supremepackagemachinery_services_mv7rd9.png"
+            "https://res.cloudinary.com/ddvs8i9lc/image/upload/v1774203622/Macbook-Air-supremepackagemachinery_about_ycgvti.png",
+            "https://res.cloudinary.com/ddvs8i9lc/image/upload/v1774203627/Macbook-Air-supremepackagemachinery_services_mv7rd9.png",
         ],
         tags: ["HTML", "CSS", "JavaScript"],
         liveUrl: "https://supremepackagemachinery.com",
-		githubUrl:"https://github.com/Godwinn22/supreme-package-machinery",
+        githubUrl: "https://github.com/Godwinn22/supreme-package-machinery",
         year: "2024",
     },
     {
@@ -92,11 +92,41 @@ export const projectsData = [
             "A website for a non-profit organization focused on educational empowerment. Features include donation integration, event management, and a blog for sharing impact stories.",
         images: [
             "https://res.cloudinary.com/ddvs8i9lc/image/upload/v1774204388/vermac_index_n1q8f0.png",
-			"https://res.cloudinary.com/ddvs8i9lc/image/upload/v1774204382/vermac_our_team_rzrfai.png",
-			"https://res.cloudinary.com/ddvs8i9lc/image/upload/v1774204391/vermac_contact_us_cxssuv.png"
+            "https://res.cloudinary.com/ddvs8i9lc/image/upload/v1774204382/vermac_our_team_rzrfai.png",
+            "https://res.cloudinary.com/ddvs8i9lc/image/upload/v1774204391/vermac_contact_us_cxssuv.png",
         ],
         tags: ["Wordpress", "Elementor", "MySQL"],
         liveUrl: "https://vermaceducationalfoundation.com",
         year: "2024",
+    },
+];
+
+export const experienceData = [
+    {
+        id: 1,
+        role: "Software Developer and IT Support Specialist",
+        company: "Globus Ltd",
+        period: "2025 — Present",
+        description:
+            "Designed and Developed Web Applications using React, Tailwind CSS, and Supabase. Collaborated with cross-functional teams to gather requirements and implement features. Provided IT support to ensure smooth operation of company systems across multiple supermarket outlets and resolved technical issues promptly. Provided hands-on technical support, hardware and software troubleshooting, and network-related issues for staff with varying technical skill levels. Administered in-house business software, including user access management, routine data backups, and system monitoring. Collaborated closely with managers, inventory staff, and cashiers to support sales and supply workflows, translating technical issues into clear, practical solutions.",
+        tags: ["React", "Tailwind CSS", "Supabase"],
+    },
+    {
+        id: 2,
+        role: "Lead Frontend Development Tutor and Developer",
+        company: "Setime Technologies",
+        period: "2023 — 2025",
+        description:
+            "Successfully mentored over 70+ aspiring developers in front-end web development. Delivered structured lessons on Javascript programming fundamentals including data-types, arrays, functions, file and exception handling, etc. Played a key role in helping students build confidence, complete projects, and prepare for real-world software development tasks.",
+        tags: ["HTML", "CSS", "React", "Tailwind CSS", "WordPress"],
+    },
+    {
+        id: 3,
+        role: "Freelance Web Developer",
+        company: "Self Employed",
+        period: "2023 — Present",
+        description:
+            "Designed and Developed websites for businesses and non-profit organizations. Handled everything from client communication to deployment. And also maintained and updated existing websites to ensure optimal performance and security. Successfully completed projects on time and within budget, resulting in satisfied clients and repeat business.",
+        tags: ["WordPress", "Elementor", "MySQL"],
     },
 ];
