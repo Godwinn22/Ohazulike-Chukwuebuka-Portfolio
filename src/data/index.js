@@ -106,16 +106,16 @@ export const experienceData = [
         id: 1,
         role: "Software Developer and IT Support Specialist",
         company: "Globus Ltd",
-        period: "2025 — Present",
+        period: "2025 - Present",
         description:
-            "Designed and Developed Web Applications using React, Tailwind CSS, and Supabase. Collaborated with cross-functional teams to gather requirements and implement features. Provided IT support to ensure smooth operation of company systems across multiple supermarket outlets and resolved technical issues promptly. Provided hands-on technical support, hardware and software troubleshooting, and network-related issues for staff with varying technical skill levels. Administered in-house business software, including user access management, routine data backups, and system monitoring. Collaborated closely with managers, inventory staff, and cashiers to support sales and supply workflows, translating technical issues into clear, practical solutions.",
+            "Designed and Developed Web Applications using React, Tailwind CSS, and Supabase. Collaborated with cross-functional teams to gather requirements and implement features. Provided IT support to ensure smooth operation of company systems across multiple supermarket outlets and resolved technical issues promptly. Administered in-house business software, including user access management, routine data backups, and system monitoring. Collaborated closely with managers, inventory staff, and cashiers to support sales and supply workflows, translating technical issues into clear, practical solutions.",
         tags: ["React", "Tailwind CSS", "Supabase"],
     },
     {
         id: 2,
         role: "Lead Frontend Development Tutor and Developer",
         company: "Setime Technologies",
-        period: "2023 — 2025",
+        period: "2023 - 2025",
         description:
             "Successfully mentored over 70+ aspiring developers in front-end web development. Delivered structured lessons on Javascript programming fundamentals including data-types, arrays, functions, file and exception handling, etc. Played a key role in helping students build confidence, complete projects, and prepare for real-world software development tasks.",
         tags: ["HTML", "CSS", "React", "Tailwind CSS", "WordPress"],
@@ -124,7 +124,7 @@ export const experienceData = [
         id: 3,
         role: "Freelance Web Developer",
         company: "Self Employed",
-        period: "2023 — Present",
+        period: "2023 - Present",
         description:
             "Designed and Developed websites for businesses and non-profit organizations. Handled everything from client communication to deployment. And also maintained and updated existing websites to ensure optimal performance and security. Successfully completed projects on time and within budget, resulting in satisfied clients and repeat business.",
         tags: ["WordPress", "Elementor", "MySQL"],
