@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
-import { fadeUp, staggerContainer, staggerItem } from "../utils/animations";
+import { fadeUp } from "../utils/animations";
 import ExperienceList from "../components/ExperienceList";
 import { statsData, projectsData } from "../data";
 import { FiArrowUpRight } from "react-icons/fi"; // Feather Icons
@@ -165,7 +165,7 @@ const Home = () => {
                     </Link>
                 </div>
             </motion.section>
-			
+
             {/* ── TechStack Section ── */}
             <motion.section
                 variants={fadeUp}
