@@ -70,7 +70,7 @@ const ContactForm = () => {
         >
             {/* ── Section Heading ── */}
             <h2
-                className="text-[60px] md:text-[80px] font-black leading-none uppercase mb-12"
+                className="text-[35px] md:text-[70px] font-black leading-none uppercase mb-12"
                 style={{ fontFamily: "var(--font-display)" }}
             >
                 <span className="text-text-primary block">Let's Work</span>
