@@ -1,3 +1,6 @@
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion";
+import { fadeUp } from "../utils/animations";
 import { experienceData } from "../data";
 
 const ExperienceList = ({ limit }) => {
@@ -5,7 +8,13 @@ const ExperienceList = ({ limit }) => {
         ? experienceData.slice(0, limit)
         : experienceData;
     return (
-        <div className="flex flex-col gap-6 font-body ">
+        <motion.div
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="flex flex-col gap-6 font-body "
+        >
             {displayedExperience.map((experience) => {
                 return (
                     <div
@@ -41,7 +50,7 @@ const ExperienceList = ({ limit }) => {
                     </div>
                 );
             })}
-        </div>
+        </motion.div>
     );
 };
 
