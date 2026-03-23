@@ -25,9 +25,12 @@ const NotFound = () => {
                 </span>
             </h1>
             <div className="flex flex-col items-center text-center gap-6">
+                <p className="text-text-muted text-center text-lg mb-8">
+                    Oops! The page you are looking for does not exist.
+                </p>
                 <Link
                     to="/"
-                    className="bg-accent hover:bg-accent-hover text-white font-bold py-4 px-8 rounded-xl transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+                    className="bg-accent hover:bg-accent-hover text-white font-bold py-4 px-8 rounded-xl transition-colors duration-300 cursor-pointer"
                 >
                     Go Back Home
                 </Link>
