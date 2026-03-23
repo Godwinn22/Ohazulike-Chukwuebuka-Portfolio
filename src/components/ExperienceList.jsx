@@ -2,7 +2,7 @@ import { experienceData } from "../data";
 
 const ExperienceList = ({ limit }) => {
     const displayedExperience = limit
-        ? experienceData.slice(0, 3)
+        ? experienceData.slice(0, limit)
         : experienceData;
     return (
         <div className="flex flex-col gap-6 font-body ">
