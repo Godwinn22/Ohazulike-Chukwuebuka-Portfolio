@@ -1,10 +1,19 @@
 import { Link } from "react-router-dom";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion";
+import { fadeUp } from "../utils/animations";
 import { projectsData } from "../data/index.js";
 import { FiArrowUpRight } from "react-icons/fi";
 
 const Projects = () => {
     return (
-        <main className="ml-0 md:ml-90 px-8 md:px-16 mt-2 md:mt-8 min-h-screen pt-31 pb-24">
+        <motion.main
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="ml-0 md:ml-90 px-8 md:px-16 mt-2 md:mt-8 min-h-screen pt-31 pb-24"
+        >
             <h1 className="font-display text-[60px] md:text-[80px] font-black leading-none uppercase mb-8">
                 <span className="text-text-primary block">Recent</span>
                 <span
@@ -24,7 +33,7 @@ const Projects = () => {
                     return (
                         <Link
                             to={`/projects/${project.slug}`}
-							key={project.id}
+                            key={project.id}
                             className="flex items-center gap-6 border-b border-border py-6 group cursor-pointer"
                         >
                             {/* Projects thumbnail */}
@@ -45,14 +54,13 @@ const Projects = () => {
                                     {project.category}
                                 </p>
                             </div>
-							{/* Arrow icon */}
-							<FiArrowUpRight 
-							className="text-text-muted group-hover:text-accent group-hover:translate-x-2 transition-all duration-300"/>
+                            {/* Arrow icon */}
+                            <FiArrowUpRight className="text-text-muted group-hover:text-accent group-hover:translate-x-2 transition-all duration-300" />
                         </Link>
                     );
                 })}
             </div>
-        </main>
+        </motion.main>
     );
 };
 
