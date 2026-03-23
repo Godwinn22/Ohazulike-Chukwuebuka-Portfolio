@@ -29,9 +29,9 @@ const Navbar = () => {
             label: "Experience",
         },
         {
-            path: "/tools",
+            path: "/techstack",
             icon: FaWrench,
-            label: "Tools",
+            label: "TechStack",
         },
         {
             path: "contact",
