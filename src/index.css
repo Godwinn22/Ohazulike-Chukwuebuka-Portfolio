@@ -29,7 +29,7 @@ body {
 }
 
 /* Light mode overrides */
-.light {
+body.light {
     --color-bg: #F8F9FA;
     --color-bg-card: #FFFFFF;
     --color-bg-sidebar: #FFFFFF;
