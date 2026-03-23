@@ -12,7 +12,7 @@ const Experience = () => {
             viewport={{ once: true }}
             className="ml-0 md:ml-90 mt-2 md:mt-8 min-h-screen px-8 md:px-16 pt-31 pb-24"
         >
-            <h1 className="font-display text-[50px] md:text-[80px] font-black leading-none uppercase mb-8">
+            <h1 className="font-display text-[35px] md:text-[70px] font-black leading-none uppercase mb-8">
                 <span className="text-text-primary block">3 Years of</span>
                 <span
                     className="block"
