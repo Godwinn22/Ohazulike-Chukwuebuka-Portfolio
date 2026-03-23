@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion";
+import { fadeUp, staggerContainer, staggerItem } from "../utils/animations";
 import ExperienceList from "../components/ExperienceList";
 import { statsData, projectsData } from "../data";
 import { FiArrowUpRight } from "react-icons/fi"; // Feather Icons
@@ -6,9 +9,15 @@ import TechStackList from "../components/TechStackList";
 
 const Home = () => {
     return (
-        <main className="ml-0 md:ml-90 mt-2 md:mt-8 min-h-screen px-8 md:px-16 pt-31 pb-24">
+        <motion.main className="ml-0 md:ml-90 mt-2 md:mt-8 min-h-screen px-8 md:px-16 pt-31 pb-24">
             {/* ── Hero Section ── */}
-            <section className="mb-15">
+            <motion.section
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                className="mb-25"
+            >
                 {/* The big stacked word. */}
                 <h1
                     className="font-display text-[50px] md:text-[80px] font-black leading-none uppercase mb-8"
@@ -26,16 +35,13 @@ const Home = () => {
                     </span>
                 </h1>
                 {/* The description and the button. */}
-                <p className="text-text-muted text-sm md:text-lg max-w-2xl -mt-2 leading-normal">
+                <p className="text-text-muted text-sm md:text-lg max-w-2xl -mt- leading-normal">
                     Passionate about building scalable digital products. I turn
                     ideas into clean, functional code and bring intuitive user
                     interfaces to life. Let's create something amazing together!
                 </p>
-            </section>
 
-            {/* ── Stats Section ── */}
-            <section className="mb-25">
-                <div className="flex flex-wrap gap-12">
+                <div className="flex flex-wrap gap-12 mt-14">
                     {statsData.map((stat) => {
                         return (
                             <div key={stat.number}>
@@ -50,10 +56,16 @@ const Home = () => {
                         );
                     })}
                 </div>
-            </section>
+            </motion.section>
 
             {/* ── Recent Projects Section ── */}
-            <section className="mb-25">
+            <motion.section
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                className="mb-25"
+            >
                 {/* Section heading — same stacked style */}
                 <h1
                     className="font-display text-[60px] md:text-[80px] font-black leading-none uppercase mb-8"
@@ -106,6 +118,7 @@ const Home = () => {
                         );
                     })}
                 </div>
+
                 {/* View all projects link */}
                 <div className="mt-10">
                     <Link
@@ -116,10 +129,16 @@ const Home = () => {
                         <FiArrowUpRight size={14} />
                     </Link>
                 </div>
-            </section>
+            </motion.section>
 
             {/* ── Experience Section ── */}
-            <section className="mb-25">
+            <motion.section
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                className="mb-25"
+            >
                 <h2
                     className="text-[60px] md:text-[80px] font-black leading-none uppercase mb-12"
                     style={{ fontFamily: "var(--font-display)" }}
@@ -145,9 +164,15 @@ const Home = () => {
                         <FiArrowUpRight size={14} />
                     </Link>
                 </div>
-            </section>
+            </motion.section>
+			
             {/* ── TechStack Section ── */}
-            <section>
+            <motion.section
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+            >
                 <h2
                     className="text-[60px] md:text-[80px] font-black leading-none uppercase mb-12"
                     style={{ fontFamily: "var(--font-display)" }}
@@ -173,8 +198,8 @@ const Home = () => {
                         <FiArrowUpRight size={14} />
                     </Link>
                 </div>
-            </section>
-        </main>
+            </motion.section>
+        </motion.main>
     );
 };
 
