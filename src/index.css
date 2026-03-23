@@ -27,3 +27,15 @@ body {
   background-color: var(--color-bg);
   overflow-x: hidden;
 }
+
+/* Light mode overrides */
+.light {
+    --color-bg: #F8F9FA;
+    --color-bg-card: #FFFFFF;
+    --color-bg-sidebar: #FFFFFF;
+    --color-bg-input: #F1F3F5;
+    --color-border: #DEE2E6;
+    --color-text-primary: #0A1628;
+    --color-text-muted: #495057;
+    --color-text-faint: #CCD5E0;
+}
