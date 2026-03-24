@@ -8,7 +8,6 @@ A modern, respo  nsive developer portfolio built from scratch with React and Vit
 
 ## Screenshots
 
-> _Add screenshots of your portfolio here_
 <img width="2718" height="1562" alt="Macbook-Air-ohazulike-chukwuebuka-portfolio vercel app" src="https://github.com/user-attachments/assets/d9c6ef0a-e1e1-44f3-82d4-61174655e033" />
 <img width="2718" height="1562" alt="Macbook-Air-ohazulike-chukwuebuka-portfolio vercel_home_lightmode" src="https://github.com/user-attachments/assets/7759ca5a-8bc2-44a4-8c4d-60e8791d5ea0" />
 <img width="2718" height="1562" alt="Macbook-Air-ohazulike-chukwuebuka-portfolio vercel app" src="https://github.com/user-attachments/assets/0e0f158f-a0ca-497d-b494-91aa95231774" />
