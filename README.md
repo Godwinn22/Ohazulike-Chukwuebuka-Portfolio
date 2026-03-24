@@ -1,6 +1,6 @@
 # Ohazulike Chukwuebuka Godwin - Software Engineer Portfolio.
 
-A modern, responsive developer portfolio built from scratch with React and Vite. Features a clean dark navy design with orange accents, smooth scroll animations, dark/light mode, and a fully functional contact form.
+A modern, respo  nsive developer portfolio built from scratch with React and Vite. Features a clean dark navy design with orange accents, smooth scroll animations, dark/light mode, and a fully functional contact form.
 
 🌐 **Live Site:** [ohazulike-chukwuebuka-portfolio.vercel.app](https://ohazulike-chukwuebuka-portfolio.vercel.app)
 
@@ -9,6 +9,16 @@ A modern, responsive developer portfolio built from scratch with React and Vite.
 ## Screenshots
 
 > _Add screenshots of your portfolio here_
+<img width="2718" height="1562" alt="Macbook-Air-ohazulike-chukwuebuka-portfolio vercel app" src="https://github.com/user-attachments/assets/d9c6ef0a-e1e1-44f3-82d4-61174655e033" />
+<img width="2718" height="1562" alt="Macbook-Air-ohazulike-chukwuebuka-portfolio vercel_home_lightmode" src="https://github.com/user-attachments/assets/7759ca5a-8bc2-44a4-8c4d-60e8791d5ea0" />
+<img width="2718" height="1562" alt="Macbook-Air-ohazulike-chukwuebuka-portfolio vercel app" src="https://github.com/user-attachments/assets/0e0f158f-a0ca-497d-b494-91aa95231774" />
+<img width="2718" height="1562" alt="Macbook-Air-ohazulike-chukwuebuka-portfolio vercel app experience" src="https://github.com/user-attachments/assets/30d602f8-56eb-46bb-a647-cbfbd8da7355" />
+<img width="2718" height="1562" alt="Macbook-Air-ohazulike-chukwuebuka-portfolio vercel app" src="https://github.com/user-attachments/assets/265ad6b2-af04-459c-9fdd-11dad019cdfa" />
+<img width="788" height="1594" alt="iPhone-12-PRO-ohazulike-chukwuebuka-portfolio vercel app" src="https://github.com/user-attachments/assets/4b4b8e96-968d-4509-a28a-2f27cb450b44" />
+<img width="788" height="1594" alt="iPhone-12-PRO-ohazulike-chukwuebuka-portfolio vercel app" src="https://github.com/user-attachments/assets/7949dbaf-2a4d-45dd-b1dd-c35f6989b9ef" />
+<img width="788" height="1594" alt="iPhone-12-PRO-ohazulike-chukwuebuka-portfolio vercel app" src="https://github.com/user-attachments/assets/5ceae163-c3af-4288-a62e-5d17e4d9c5f0" />
+<img width="788" height="1594" alt="iPhone-12-PRO-ohazulike-chukwuebuka-portfolio vercel app" src="https://github.com/user-attachments/assets/8b653f76-37ec-4ddc-bb38-d647faa1d833" />
+<img width="788" height="1594" alt="iPhone-12-PRO-ohazulike-chukwuebuka-portfolio vercel app" src="https://github.com/user-attachments/assets/cd174297-4a31-4035-aa29-66c63b01b43e" />
 
 
 ---
